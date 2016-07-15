@@ -57,7 +57,7 @@ class Redis
             return false;
         }
         $s = fgets($this->conn);
-        return trim($s);
+        return $s;
     }
 
     private function cmdResponse()
